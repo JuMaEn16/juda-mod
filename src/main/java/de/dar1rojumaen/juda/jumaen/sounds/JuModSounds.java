@@ -17,6 +17,6 @@ public class JuModSounds {
     }
 
     public static void register() {
-        Registry.register(Registries.SOUND_EVENT, DOUBLE_JUMP.getId(), DOUBLE_JUMP);
+        //Registry.register(Registries.SOUND_EVENT, DOUBLE_JUMP.getId(), DOUBLE_JUMP);
     }
 }

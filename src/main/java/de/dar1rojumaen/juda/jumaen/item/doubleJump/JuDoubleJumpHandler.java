@@ -87,7 +87,7 @@ public class JuDoubleJumpHandler {
                     // Play the sound for everyone nearby
                     World world = player.getWorld();
                     world.playSound(
-                            null, // Null means the sound is audible to all players in range
+                            player,
                             player.getBlockPos(),
                             JuModSounds.DOUBLE_JUMP,
                             SoundCategory.PLAYERS,
