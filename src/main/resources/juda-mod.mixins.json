@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "de.dar1rojumaen.juda.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
