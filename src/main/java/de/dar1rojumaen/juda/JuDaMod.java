@@ -6,7 +6,7 @@ import de.dar1rojumaen.juda.dar1ro.item.DaModItems;
 import de.dar1rojumaen.juda.jumaen.block.JuModBlocks;
 import de.dar1rojumaen.juda.jumaen.inventoryGroup.JuModGroups;
 import de.dar1rojumaen.juda.jumaen.item.JuModItems;
-import de.dar1rojumaen.juda.jumaen.item.doubleJump.JuDoubleJumpHandler;
+import de.dar1rojumaen.juda.jumaen.sounds.JuModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -39,6 +39,8 @@ public class JuDaMod implements ModInitializer {
 
 		JuModItems.registerModItems();
 		JuModBlocks.registerModBlocks();
+
+		JuModSounds.register();
 
 		LOGGER.info("Hello Fabric world!");
 	}

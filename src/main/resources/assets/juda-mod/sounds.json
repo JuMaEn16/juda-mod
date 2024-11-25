@@ -1,0 +1,11 @@
+{
+  "double_jump": {
+    "sounds": [
+      {
+        "name": "juda-mod:double_jump",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  }
+}
