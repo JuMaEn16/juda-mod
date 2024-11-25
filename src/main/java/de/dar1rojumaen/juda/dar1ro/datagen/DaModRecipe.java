@@ -1,4 +1,4 @@
-package de.dar1rojumaen.juda.jumaen.datagen;
+package de.dar1rojumaen.juda.dar1ro.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -7,8 +7,8 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-public class JuModRecipe extends FabricRecipeProvider {
-    public JuModRecipe(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class DaModRecipe extends FabricRecipeProvider {
+    public DaModRecipe(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
