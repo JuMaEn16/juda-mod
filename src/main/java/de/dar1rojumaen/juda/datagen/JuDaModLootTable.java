@@ -1,4 +1,4 @@
-package de.dar1rojumaen.juda.dar1ro.datagen;
+package de.dar1rojumaen.juda.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -17,8 +17,8 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-public class DaModLootTable extends FabricBlockLootTableProvider {
-    public DaModLootTable(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+public class JuDaModLootTable extends FabricBlockLootTableProvider {
+    public JuDaModLootTable(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
     }
 

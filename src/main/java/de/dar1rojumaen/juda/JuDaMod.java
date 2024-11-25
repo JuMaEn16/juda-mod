@@ -40,10 +40,6 @@ public class JuDaMod implements ModInitializer {
 		JuModItems.registerModItems();
 		JuModBlocks.registerModBlocks();
 
-		JuDoubleJumpHandler.register();
-
-
-
 		LOGGER.info("Hello Fabric world!");
 	}
 }

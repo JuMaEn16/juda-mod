@@ -1,16 +1,15 @@
-package de.dar1rojumaen.juda.jumaen.datagen;
+package de.dar1rojumaen.juda.datagen;
 
 import de.dar1rojumaen.juda.jumaen.item.JuModItems;
 import de.dar1rojumaen.juda.jumaen.util.JuModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-public class JuModItemTag extends FabricTagProvider.ItemTagProvider {
-    public JuModItemTag(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
+public class JuDaModItemTag extends FabricTagProvider.ItemTagProvider {
+    public JuDaModItemTag(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
         super(output, completableFuture);
     }
 

@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"de.dar1rojumaen.juda.JuDaModDataGenerator"
+		],
+		"client" : [
+			"de.dar1rojumaen.juda.JuDaModClient"
 		]
 	},
 	"mixins": [
