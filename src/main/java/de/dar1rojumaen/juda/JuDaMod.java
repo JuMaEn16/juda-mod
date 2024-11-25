@@ -1,8 +1,10 @@
 package de.dar1rojumaen.juda;
 
 import de.dar1rojumaen.juda.dar1ro.block.DaModBlocks;
+import de.dar1rojumaen.juda.dar1ro.inventoryGroup.DaModGroups;
 import de.dar1rojumaen.juda.dar1ro.item.DaModItems;
 import de.dar1rojumaen.juda.jumaen.block.JuModBlocks;
+import de.dar1rojumaen.juda.jumaen.inventoryGroup.JuModGroups;
 import de.dar1rojumaen.juda.jumaen.item.JuModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -22,6 +24,8 @@ public class JuDaMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		DaModGroups.registerGroups();
+		JuModGroups.registerGroups();
 
 		DaModItems.registerModItems();
 		JuModItems.registerModItems();
