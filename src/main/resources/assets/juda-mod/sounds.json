@@ -7,5 +7,23 @@
         "pitch": 1.0
       }
     ]
+  },
+  "end_weapon": {
+    "sounds": [
+      {
+        "name": "juda-mod:end_weapon",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "start_weapon": {
+    "sounds": [
+      {
+        "name": "juda-mod:start_weapon",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
   }
 }
