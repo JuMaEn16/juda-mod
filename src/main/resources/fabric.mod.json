@@ -36,5 +36,10 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+	"custom": {
+		"cardinal-components": [
+			"juda-mod:magik"
+		]
 	}
 }

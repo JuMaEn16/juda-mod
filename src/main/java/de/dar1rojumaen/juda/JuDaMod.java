@@ -9,6 +9,9 @@ import de.dar1rojumaen.juda.jumaen.item.JuModItems;
 import de.dar1rojumaen.juda.jumaen.sounds.JuModSounds;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.registry.RegistryWrapper;
+import org.ladysnake.cca.api.v3.component.ComponentV3;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
