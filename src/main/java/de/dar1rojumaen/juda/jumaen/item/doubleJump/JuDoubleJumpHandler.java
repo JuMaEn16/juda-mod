@@ -1,11 +1,14 @@
 package de.dar1rojumaen.juda.jumaen.item.doubleJump;
 
 import de.dar1rojumaen.juda.jumaen.item.JuModItems;
+import de.dar1rojumaen.juda.jumaen.sounds.JuModSounds;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
 
 public class JuDoubleJumpHandler {
     private static boolean canDoubleJump = false; // Tracks if the player can perform a second jump
@@ -80,6 +83,17 @@ public class JuDoubleJumpHandler {
                     Vec3d boost = direction.multiply(0.8).add(new Vec3d(0, verticalBoostFactor, 0)); // Apply both horizontal and vertical boost
                     player.setVelocity(player.getVelocity().add(boost));
                     player.velocityModified = true; // Ensure velocity change is applied
+
+                    // Play the sound for everyone nearby
+                    World world = player.getWorld();
+                    world.playSound(
+                            null, // Null means the sound is audible to all players in range
+                            player.getBlockPos(),
+                            JuModSounds.DOUBLE_JUMP,
+                            SoundCategory.PLAYERS,
+                            1.0F, // Volume
+                            1.0F  // Pitch
+                    );
 
                     hasDoubleJumped = true; // Mark the double jump as used
                 }
