@@ -1,19 +1,20 @@
 package de.dar1rojumaen.juda.jumaen.item.doubleJump;
 
+import de.dar1rojumaen.juda.jumaen.item.JuModItems;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.Vec3d;
 
-public class DoubleJumpHandler {
+public class JuDoubleJumpHandler {
     private static boolean canDoubleJump = false; // Tracks if the player can perform a second jump
     private static boolean hasDoubleJumped = false; // Tracks if the second jump has been used
     private static boolean jumpKeyWasPressed = false; // Tracks the state of the jump key in the previous tick
     private static boolean jumpReleasedAfterFirstJump = false; // Ensures space is released after the first jump
 
     public static void register() {
-        ClientTickEvents.END_CLIENT_TICK.register(client -> onClientTick(client));
+        ClientTickEvents.END_CLIENT_TICK.register(JuDoubleJumpHandler::onClientTick);
     }
 
     private static void onClientTick(MinecraftClient client) {
@@ -22,7 +23,7 @@ public class DoubleJumpHandler {
 
         // Check if the player is wearing the custom boots
         ItemStack boots = player.getInventory().getArmorStack(0);
-        boolean wearingCustomBoots = boots.getItem() == ModItems.YELLOW_SHARD_BOOTS;
+        boolean wearingCustomBoots = boots.getItem() == JuModItems.VOIDITE_BOOTS;
 
         if (!wearingCustomBoots) {
             // Reset state if the boots are not equipped
@@ -71,11 +72,8 @@ public class DoubleJumpHandler {
                     // Get the player's pitch (looking up/down)
                     float pitch = player.getPitch(); // Negative for looking down, positive for looking up
 
-                    // Adjust the vertical boost based on pitch
-                    double verticalBoostFactor = 0.7; // Default vertical boost strength
-
                     // If the player is looking up (positive pitch), apply positive vertical boost
-                    verticalBoostFactor = 0.7 + (pitch / 90.0) * -0.6; // Increase boost with pitch
+                    double verticalBoostFactor = 0.7 + (pitch / 90.0) * -0.6; // Increase boost with pitch
 
 
                     // Apply the boost

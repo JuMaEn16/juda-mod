@@ -6,6 +6,7 @@ import de.dar1rojumaen.juda.dar1ro.item.DaModItems;
 import de.dar1rojumaen.juda.jumaen.block.JuModBlocks;
 import de.dar1rojumaen.juda.jumaen.inventoryGroup.JuModGroups;
 import de.dar1rojumaen.juda.jumaen.item.JuModItems;
+import de.dar1rojumaen.juda.jumaen.item.doubleJump.JuDoubleJumpHandler;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -24,13 +25,24 @@ public class JuDaMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+
+
+		//Dar1ro
 		DaModGroups.registerGroups();
+
+		DaModBlocks.registerModBlocks();
+		DaModItems.registerModItems();
+
+
+		//JuMaEn16
 		JuModGroups.registerGroups();
 
-		DaModItems.registerModItems();
 		JuModItems.registerModItems();
-		DaModBlocks.registerModBlocks();
 		JuModBlocks.registerModBlocks();
+
+		JuDoubleJumpHandler.register();
+
+
 
 		LOGGER.info("Hello Fabric world!");
 	}

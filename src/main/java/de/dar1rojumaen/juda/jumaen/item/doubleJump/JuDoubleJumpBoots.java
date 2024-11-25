@@ -9,8 +9,8 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
-public class DoubleJumpBoots extends ArmorItem {
-    public DoubleJumpBoots(RegistryEntry<ArmorMaterial> material, Settings settings) {
+public class JuDoubleJumpBoots extends ArmorItem {
+    public JuDoubleJumpBoots(RegistryEntry<ArmorMaterial> material, Settings settings) {
         super(material, Type.BOOTS, settings);
     }
 
