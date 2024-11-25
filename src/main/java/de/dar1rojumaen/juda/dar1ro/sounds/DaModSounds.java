@@ -8,6 +8,8 @@ import net.minecraft.util.Identifier;
 
 public class DaModSounds {
     //public static final SoundEvent DOUBLE_JUMP = registerSoundEvent("double_jump");
+    public static final SoundEvent END_WEAPON = registerSoundEvent("end_weapon");
+    public static final SoundEvent START_WEAPON = registerSoundEvent("start_weapon");
 
 
     private static SoundEvent registerSoundEvent(String name) {
