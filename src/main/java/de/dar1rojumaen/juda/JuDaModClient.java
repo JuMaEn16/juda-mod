@@ -6,6 +6,6 @@ import net.fabricmc.api.ClientModInitializer;
 public class JuDaModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        JuDoubleJumpHandler.register();
+        //JuDoubleJumpHandler.register();
     }
 }

@@ -10,17 +10,17 @@ public class JuDaModDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-		pack.addProvider(JuDaModBlockTag::new);
+		//pack.addProvider(JuDaModBlockTag::new);
 		pack.addProvider(JuDaModItemTag::new);
-		pack.addProvider(JuDaModLootTable::new);
+		//pack.addProvider(JuDaModLootTable::new);
 		pack.addProvider(JuDaModModel::new);
-		pack.addProvider(JuDaModRecipe::new);
-		pack.addProvider(JuDaModRegistry::new);
+		//pack.addProvider(JuDaModRecipe::new);
+		//pack.addProvider(JuDaModRegistry::new);
 	}
 
-	@Override
-	public void buildRegistry(RegistryBuilder registryBuilder) {
-		//registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
-		//registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
-	}
+	//@Override
+	//public void buildRegistry(RegistryBuilder registryBuilder) {
+	//	//registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
+	//	//registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
+	//}
 }
