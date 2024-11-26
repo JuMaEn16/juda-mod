@@ -4,6 +4,7 @@ import de.dar1rojumaen.juda.dar1ro.block.DaModBlocks;
 import de.dar1rojumaen.juda.dar1ro.inventoryGroup.DaModGroups;
 import de.dar1rojumaen.juda.dar1ro.item.DaModItems;
 import de.dar1rojumaen.juda.jumaen.block.JuModBlocks;
+import de.dar1rojumaen.juda.jumaen.enchantment.JuModEnchantmentEffects;
 import de.dar1rojumaen.juda.jumaen.inventoryGroup.JuModGroups;
 import de.dar1rojumaen.juda.jumaen.item.JuModItems;
 import de.dar1rojumaen.juda.jumaen.sounds.JuModSounds;
@@ -40,6 +41,8 @@ public class JuDaMod implements ModInitializer {
 		JuModBlocks.registerModBlocks();
 
 		JuModSounds.register();
+
+		JuModEnchantmentEffects.registerEnchantmentEffects();
 
 		LOGGER.info("Hello Fabric world!");
 	}
