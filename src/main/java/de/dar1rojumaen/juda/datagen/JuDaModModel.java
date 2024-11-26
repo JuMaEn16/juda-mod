@@ -20,6 +20,5 @@ public class JuDaModModel extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(JuModItems.VOIDITE, Models.GENERATED);
-
     }
 }
